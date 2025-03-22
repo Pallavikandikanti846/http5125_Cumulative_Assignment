@@ -10,3 +10,9 @@ This repository contains a C# MVC application that connects to a MySQL database 
 - **Controllers/CourseAPIController.cs**: An API controller for accessing course information from the database.
 - **Program.cs**: Contains the application configuration and startup logic for the ASP.NET Core application.
 
+  ## Requirements
+
+- **Visual Studio 2022 Editor or Visual Studio Code Editor**
+- **PHP Adminer XAMPP or MAMP
+- **MySQL Database**: Ensure you have a MySQL database set up with appropriate tables for `Students`, `Teachers`, and `Courses`.
+
