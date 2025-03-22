@@ -13,6 +13,6 @@ This repository contains a C# MVC application that connects to a MySQL database 
   ## Requirements
 
 - **Visual Studio 2022 Editor or Visual Studio Code Editor**
-- **PHP Adminer XAMPP or MAMP
+- **PHP Adminer XAMPP or MAMP**
 - **MySQL Database**: Ensure you have a MySQL database set up with appropriate tables for `Students`, `Teachers`, and `Courses`.
 
