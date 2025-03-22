@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CumulativeAssignment_01.Models.Teacher>
+
+<h1>Printing a List Of Teachers from database</h1>
+
+
+@* // looping through the data in Teachers module *@
+	@foreach(Teacher teachers in Model){
+		@* //Printing each row on the web page. *@
+		<div>
+			
+		<a href="/TeacherPage/Show/@teachers.TeacherId">@teachers.TeacherFName @teachers.TeacherLName @teachers.EmployeeNo @teachers.HireDate @teachers.Salary</a>
+		</div>
+	}
+
+

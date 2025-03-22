@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CumulativeAssignment_01.Models.Student>
+
+<h1>Printing all the students Information</h1>
+
+@* // looping through the data in Students module *@
+@foreach (Student students in Model)
+{
+	@* //Printing each row on the web page. *@
+	<div>
+		<a href="/StudentPage/Show/@students.StudentId">@students.StudentFName @students.StudentLName @students.StudentNumber @students.EnrolDate</a>
+	</div>
+}
