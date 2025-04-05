@@ -1,0 +1,23 @@
+﻿@model CumulativeAssignment_01.Models.Student
+<style>
+	#deleteBtn {
+		font-size: 24px;
+		background-color: red;
+		border: 1px solid none;
+		color: white;
+		padding: 5px;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+</style>
+
+@* // Printing each individual row values of the table on the web page. *@
+<div>
+	<a href="/StudentPage/List">Back to List</a>
+	<p>Student Id : @Model.StudentId</p>
+	<p>First Name : @Model.StudentFName</p>
+	<p>Last Name : @Model.StudentLName</p>
+	<p>Student No : @Model.StudentNumber</p>
+	<p>Enrol Date : @Model.EnrolDate</p>
+	<a href="/StudentPage/DeleteConfirm/@Model.StudentId" id="deleteBtn">Delete</a>
+</div>

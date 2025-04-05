@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CumulativeAssignment_01.Models.Teacher>
+
+	<style>
+		#linkTeacher{
+			text-decoration:underline;
+			color:blue;
+			font-weight:bold;
+			font-size:36px;
+		}
+	</style>
+<h1>Printing a List Of Teachers from database</h1>
+
+<a href="/TeacherPage/New" id="linkTeacher">Add Teacher</a>
+
+@* // looping through the data in Teachers module *@
+	@foreach(Teacher teachers in Model){
+		@* //Printing each row on the web page. *@
+		<div>
+			
+		<a href="/TeacherPage/Show/@teachers.TeacherId">@teachers.TeacherFName @teachers.TeacherLName @teachers.EmployeeNo @teachers.HireDate @teachers.Salary</a>
+		</div>
+	}
+
+

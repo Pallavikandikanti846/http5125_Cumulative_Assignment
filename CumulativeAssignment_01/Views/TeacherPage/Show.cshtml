@@ -1,0 +1,25 @@
+﻿@model CumulativeAssignment_01.Models.Teacher
+<style>
+	#deleteBtn{
+		font-size:24px;
+		background-color:red;
+		border:1px solid none;
+		color:white;
+		padding:5px;
+		border-radius:5px;
+		text-decoration:none;
+	}
+</style>
+  @* // Printing each individual row values of the table on the web page. *@
+	<div>
+	<a href="/TeacherPage/List">Back to List</a>
+	<p>Teacher Id : @Model.TeacherId</p>
+	<p>First Name : @Model.TeacherFName</p>
+	<p>Last Name : @Model.TeacherLName</p>
+	<p>Employee No : @Model.EmployeeNo</p>
+	<p>Hire Date : @Model.HireDate</p>
+	<p>Salary : @Model.Salary</p>
+	<a href="/TeacherPage/DeleteConfirm/@Model.TeacherId" id="deleteBtn">Delete</a>
+    </div>
+
+

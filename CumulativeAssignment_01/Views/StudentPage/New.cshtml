@@ -1,0 +1,54 @@
+﻿@* Styling Form *@
+<style>
+	#addParentDiv {
+		margin-right500px;
+	}
+
+	form {
+		border: 1px solid black;
+		padding: 15px;
+		text-align: center;
+		width: 30%;
+	}
+
+	.formInput {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+		.formInput label {
+			width: 100px;
+			display: block;
+		}
+</style>
+
+@* Webpage Form *@
+<div id="addParentDiv">
+	<nav>
+		<a class="navlink" href="/StudentPage/List">Back To Students List</a>
+	</nav>
+
+	<h2> Add A New Student</h2>
+	<form method="POST" action="/StudentPage/Create">
+		<div class="formInput">
+			<label for="StudentFName">First Name:</label>
+			<input type="text" id="StudentFName" name="StudentFName" />
+		</div>
+		<div class="formInput">
+			<label for="StudentLName">Last Name:</label>
+			<input type="text" id="StudentLName" name="StudentLName" />
+		</div>
+		<div class="formInput">
+			<label for="StudentNumber">Student Number:</label>
+			<input type="text" id="StudentNumber" name="StudentNumber" />
+		</div>
+		<div class="formInput">
+			<label for="EnrolDate">Enrol Date:</label>
+			<input type="date" id="EnrolDate" name="EnrolDate" />
+		</div>
+		<div class="formInput">
+			<input type="submit" value="Add Student" />
+		</div>
+	</form>
+</div>

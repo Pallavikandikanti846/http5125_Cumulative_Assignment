@@ -1,0 +1,61 @@
+﻿@* Styling form *@
+<style>
+	#addParentDiv {
+		margin-right500px;
+	}
+
+	form {
+		border: 1px solid black;
+		padding: 15px;
+		text-align: center;
+		width: 30%;
+	}
+
+	.formInput {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+		.formInput label {
+			width: 100px;
+			display: block;
+		}
+</style>
+@* Webpage Form *@
+<div id="addParentDiv">
+	<nav>
+		<a class="navlink" href="/CoursePage/List">Back To Courses List</a>
+	</nav>
+
+	<h2> Add A New Course</h2>
+	<form method="POST" action="/CoursePage/Create">
+		<div class="formInput">
+			<label for="CourseId">Course Id:</label>
+			<input type="text" id="CourseId" name="CourseId" />
+		</div>
+		<div class="formInput">
+			<label for="CourseCode">Course Code:</label>
+			<input type="text" id="CourseCode" name="CourseCode" />
+		</div>
+		<div class="formInput">
+			<label for="TeacherId">Teacher Id:</label>
+			<input type="text" id="TeacherId" name="TeacherId" />
+		</div>
+		<div class="formInput">
+			<label for="StartDate">Start Date:</label>
+			<input type="date" id="StartDate" name="StartDate" />
+		</div>
+		<div class="formInput">
+			<label for="FinishDate">Finish Date:</label>
+			<input type="date" id="FinishDate" name="FinishDate" />
+		</div>
+		<div class="formInput">
+			<label for="CourseName">Course Name:</label>
+			<input type="text" id="CourseName" name="CourseName" />
+		</div>
+		<div class="formInput">
+			<input type="submit" value="Add Course" />
+		</div>
+	</form>
+</div>

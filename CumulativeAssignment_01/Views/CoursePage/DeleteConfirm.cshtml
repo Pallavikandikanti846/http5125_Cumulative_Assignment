@@ -1,0 +1,12 @@
+﻿@model CumulativeAssignment_01.Models.Course;
+
+<h2>Are you sure you want to delete this Course Data?</h2>
+
+<a href="/CoursePage/Show/@Model.CourseId">Back</a>
+
+<p>Course Code:@Model.CourseCode,Course Name:@Model.CourseName</p>
+
+
+<form method="POST" action="/CoursePage/Delete/@Model.CourseId">
+	<input type="submit" value="Delete" />
+</form>

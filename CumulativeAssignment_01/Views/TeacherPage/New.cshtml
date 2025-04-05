@@ -1,0 +1,55 @@
+﻿@* Styling the Form *@
+<style>
+	#addParentDiv {
+		margin-right500px;
+	}
+	form{
+		border:1px solid black;
+		padding:15px;
+		text-align: center;
+		width:30%;
+	}
+	.formInput{
+		margin-bottom:10px;
+		display:flex;
+		align-items:center;
+	}
+	.formInput label{
+		width: 100px;
+		display:block;
+	}	
+</style>
+
+@* Form Creation *@
+<div id="addParentDiv">
+	<nav>
+		<a class="navlink" href="/TeacherPage/List">Back To Teachers List</a>
+	</nav>
+
+<h2> Add A New Teacher</h2>
+<form method="POST" action="/TeacherPage/Create">
+	<div class="formInput">
+			<label for="TeacherFName">First Name:</label>
+			<input type="text" id="TeacherFName" name="TeacherFName" />
+	</div>
+	<div class="formInput">
+			<label for="TeacherLName">Last Name:</label>
+			<input type="text" id="TeacherLName" name="TeacherLName" />
+	</div>
+	<div class="formInput">
+			<label for="EmployeeNo">Employee Number:</label>
+			<input type="text" id="EmployeeNo" name="EmployeeNo" />
+	</div>
+		<div class="formInput">
+			<label for="HireDate">Hire Date:</label>
+			<input type="date" id="HireDate" name="HireDate" />
+		</div>
+	<div class="formInput">
+			<label for="Salary">Salary:</label>
+			<input type="text" id="Salary" name="Salary" />
+	</div>
+	<div class="formInput">
+		<input type="submit" value="Add Teacher" />
+	</div>
+</form>
+</div>

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CumulativeAssignment_01.Models.Course>
+<style>
+	#linkCourse {
+		text-decoration: underline;
+		color: blue;
+		font-weight: bold;
+		font-size: 36px;
+	}
+</style>
+
+<h1>Printing all courses Information</h1>
+
+<a href="/CoursePage/New" id="linkCourse">Add Course</a>
+
+@* // looping through the data in courses module *@
+@foreach (Course courses in Model)
+{
+	@* //Printing each row on the web page. *@
+	<div>
+		<a href="/CoursePage/Show/@courses.CourseId">@courses.CourseCode @courses.TeacherId @courses.StartDate @courses.FinishDate @courses.CourseName</a>
+	</div>
+}
