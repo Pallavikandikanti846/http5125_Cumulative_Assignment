@@ -15,5 +15,7 @@ An API Controller which allows us to access information about Students.
 Controllers/CourseAPIController.cs
 An API Controller which allows us to access information about Courses.
 
+Each API controller has Views and Models folders which is used to print data on the UI.
+
 Program.cs
 Configuration of the application
